@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ZX Quick Shop Pizza Order</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>ZX Quick Shop Pizza Order</h1>
+    <form id="order-form">
+      <h2>Pizza Size:</h2>
+      <input type="radio" name="size" value="small" checked>Small<br>
+      <input type="radio" name="size" value="medium">Medium<br>
+      <input type="radio" name="size" value="large">Large<br>
+
+      <h2>Toppings:</h2>
+      <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
+      <input type="checkbox" name="topping" value="mushrooms">Mushrooms<br>
+      <input type="checkbox" name="topping" value="onions">Onions<br>
+      <input type="checkbox" name="topping" value="sausage">Sausage<br>
+      <input type="checkbox" name="topping" value="bacon">Bacon<br>
+
+      <h2>Delivery or Pickup:</h2>
+      <input type="radio" name="delivery" value="delivery" checked>Delivery<br>
+      <input type="radio" name="delivery" value="pickup">Pickup<br>
+
+      <h2>Order Name:</h2>
+      <input type="text" name="name">
+
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <script>
+      const form = document.querySelector('#order-form');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        window.location.href = 'order-completed.html';
+      });
+    </script>
+  </body>
+</html>
