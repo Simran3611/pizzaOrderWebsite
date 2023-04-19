@@ -5,6 +5,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <div class="panel">
+      <img src="pizza.jpg" alt="Pizza image">
+    </div>
     <h1>ZX Quick Shop Pizza Order</h1>
     <form id="order-form">
       <h2>Pizza Size:</h2>
@@ -18,6 +21,9 @@
       <input type="checkbox" name="topping" value="onions">Onions<br>
       <input type="checkbox" name="topping" value="sausage">Sausage<br>
       <input type="checkbox" name="topping" value="bacon">Bacon<br>
+      <input type="checkbox" name="topping" value="bacon">All Meat<br>
+      <input type="checkbox" name="topping" value="bacon">Cheese<br>
+      <input type="checkbox" name="topping" value="bacon">Supreme<br>
 
       <h2>Delivery or Pickup:</h2>
       <input type="radio" name="delivery" value="delivery" checked>Delivery<br>
@@ -28,7 +34,6 @@
 
       <br><br>
       <input type="submit" value="Submit">
-      //have the name appear of the user
     </form>
     <script>
       const form = document.querySelector('#order-form');
